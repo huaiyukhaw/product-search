@@ -70,3 +70,5 @@ def not_found(e):
   return redirect(url_for('index')) 
 
 app.run(debug=True)
+# app.run(host='0.0.0.0', port=5050)
+
