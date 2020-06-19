@@ -69,6 +69,6 @@ def search(search_term, method, show_images):
 def not_found(e): 
   return redirect(url_for('index')) 
 
-app.run(debug=True)
-# app.run(host='0.0.0.0', port=5050)
+#app.run(debug=True)
+app.run(host='0.0.0.0', port=5000)
 
