@@ -22,7 +22,7 @@
                         <div class="field has-addons">
                             <div class="control is-expanded">
                                 <input class="input is-rounded" type="text" placeholder="Shoes" name="searchTerm"
-                                    value="{{ searchTerm }}">
+                                    value="{{ search_term }}">
                             </div>
                             <div class="select">
                                 <select id="groupedRadio" name="method" value="{{ method }}">
@@ -66,7 +66,8 @@
                     </form>
                     {% if number_of_results != null %}
                     <br />
-                    <p>{{ number_of_results }} products found.</p>
+                    <h1 class="title is-4">{{ search_term }}</h1>
+                    <p class="subtitle is-6">{{ number_of_results }} products found.</p>
                     <br />
                     {% endif %}
                     <div class="columns is-multiline is-mobile">
